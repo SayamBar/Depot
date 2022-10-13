@@ -1,0 +1,26 @@
+<style>
+  .list_line_even {
+    background: #e0f8f8;
+  }
+  .list_line_odd {
+    background: #f8b0f8;
+  }
+</style>
+
+<p style="color: green"><%= notice %></p>
+
+<h1>Products</h1>
+
+<table>
+<div id="products">
+  <% @products.each do |product| %>
+
+    <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+      <%= render product %>
+    </tr>
+    
+  <% end %>
+</div>
+</table>
+
+<%= link_to "New product", new_product_path %>

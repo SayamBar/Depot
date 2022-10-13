@@ -1,0 +1,34 @@
+<style>
+  .list_image {
+    width: 60px;
+    height: 70px;
+  }
+</style>
+
+<div id="<%= dom_id product %>">
+
+  <td>
+    <%= image_tag(product.image_url, class: 'list_image') %>
+  </td>
+
+  <td>
+    <dl>
+      <dt><strong><%= product.title %></strong></dt>
+      <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+    </dl>
+  </td>
+
+  
+
+  <td>
+    <%= product.image_url %>
+  </td>
+
+  <td>
+    <%= product.price %>
+  </td>
+
+  <td>
+    <%= link_to "Show", product %>
+  </td>
+</div>
