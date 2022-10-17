@@ -17,7 +17,7 @@
  #banner {
     position: relative;
     min-height: 40px;
-    background: #9c9;
+    background: #141;
     padding: 10px;
     border-bottom: 2px solid;
     font: small-caps 40px/40px "Times New Roman", serif;
@@ -42,7 +42,22 @@
 }
 #side{
     padding: 1em 2em;
-    background: #141;
+    background: rgb(14, 205, 226);
+}
+/* form,div {
+    display: inline;
+} */
+input {
+    font-size: small;
+}
+#cart {
+    font-size: smaller;
+    color: white;
+}
+table {
+    border-top: 1px dotted #595;
+    border-bottom: 1px dotted #595;
+    margin-bottom: 10px;
 }
 ul {
     padding: 0;
